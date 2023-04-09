@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import './App.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {setUser} from './slices/userInfoSlice'
 import Header from './components/Header'
+import Email from './components/Email'
 
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
   });
 
   return (
-  
+      <div>
       <Header />
-
+      <Email />
+      </div>
   );
 }
 

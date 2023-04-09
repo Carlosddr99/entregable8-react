@@ -8,11 +8,11 @@ export const userInfoSlice = createSlice({
     reducers:{
     
         getEmail: (state) =>{
-            return state.user.email;
+            return state.usuario.email;
         },
 
         setEmail: (state, newEmail) =>{
-            state.user.email = newEmail;
+            state.usuario.email = newEmail.payload;
         },
 
         setUser: (state, user) => {
